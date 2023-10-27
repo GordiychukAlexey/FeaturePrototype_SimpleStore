@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dce61b3cdb04903ba68fc2e23068167, type: 3}
+  m_Name: StoreBundle3
+  m_EditorClassIdentifier: 
+  bundleName: StoreBundle3
+  reward:
+  - rid: 6917521936182673428
+  spendable:
+  - rid: 1928047035681603588
+  - rid: 1928047035681603587
+  references:
+    version: 2
+    RefIds:
+    - rid: 1928047035681603587
+      type: {class: GoldSpendableConfig, ns: Gold, asm: Gold}
+      data:
+        value: 20
+    - rid: 1928047035681603588
+      type: {class: LocationSpendableConfig, ns: Location, asm: Location}
+      data:
+        value: 3
+    - rid: 6917521936182673428
+      type: {class: PercentHealthReward, ns: Health, asm: Health}
+      data:
+        value: 10

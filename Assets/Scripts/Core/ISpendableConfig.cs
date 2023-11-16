@@ -1,7 +1,5 @@
-namespace Core
-{
-	public interface ISpendableConfig
-	{
+namespace Core{
+	public interface ISpendableConfig{
 		public ISpendable CreateInstance();
 	}
 }

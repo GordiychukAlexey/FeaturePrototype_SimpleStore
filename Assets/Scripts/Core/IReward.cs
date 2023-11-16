@@ -1,7 +1,5 @@
-namespace Core
-{
-	public interface IReward
-	{
+namespace Core{
+	public interface IReward{
 		public void Apply();
 	}
 }

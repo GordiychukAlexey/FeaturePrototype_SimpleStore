@@ -1,15 +1,10 @@
-namespace Core.Tools
-{
-	public class Singleton<T> where T : new()
-	{
+namespace Core.Tools{
+	public class Singleton<T> where T : new(){
 		protected static T instance;
 
-		public static T Instance
-		{
-			get
-			{
-				if (instance == null)
-				{
+		public static T Instance{
+			get{
+				if (instance == null){
 					instance = new T();
 				}
 

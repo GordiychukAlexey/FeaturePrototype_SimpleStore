@@ -1,19 +1,16 @@
 using System;
 using UniRx;
 
-namespace Core
-{
-	public abstract class BaseSpendable<T> : ISpendable, IDisposable where T : ISpendableConfig
-	{
-		protected IReactiveProperty<bool> isCanSpend { get; } = new ReactiveProperty<bool>(false);
+namespace Core{
+	public abstract class BaseSpendable<T> : ISpendable, IDisposable where T : ISpendableConfig{
+		protected IReactiveProperty<bool> isCanSpend{ get; } = new ReactiveProperty<bool>(false);
 		public IReadOnlyReactiveProperty<bool> IsCanSpend => isCanSpend;
 
 		protected readonly T config;
 
 		protected readonly CompositeDisposable disposables = new();
 
-		public BaseSpendable(T config)
-		{
+		public BaseSpendable(T config){
 			this.config = config;
 		}
 
@@ -21,8 +18,7 @@ namespace Core
 
 		public abstract void Apply();
 
-		public void Dispose()
-		{
+		public void Dispose(){
 			disposables.Dispose();
 		}
 	}

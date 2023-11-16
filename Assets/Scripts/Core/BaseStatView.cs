@@ -1,14 +1,11 @@
 using TMPro;
 using UnityEngine;
 
-namespace Core
-{
-	public abstract class BaseStatView : MonoBehaviour
-	{
+namespace Core{
+	public abstract class BaseStatView : MonoBehaviour{
 		[SerializeField] private TMP_Text statValueText;
 
-		protected string StatValueText
-		{
+		protected string StatValueText{
 			get => statValueText.text;
 			set => statValueText.text = value;
 		}
